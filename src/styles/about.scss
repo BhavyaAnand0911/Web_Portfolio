@@ -1,0 +1,89 @@
+$Charcol: #36454f;
+$Purple: #da38da;
+
+.about {
+  height: calc(115vh - 50px);
+  background-color: $Charcol;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 5rem;
+  margin-top: 10px;
+
+  .aboutHeading {
+    color: white;
+    font-size: 3rem;
+    font-weight: 600;
+    margin-top: 100px;
+    margin-bottom: 10px;
+  }
+  .line {
+    width: 80px;
+    border-top: 5px solid $Purple;
+    margin-bottom: 30px;
+  }
+  .aboutPara {
+    width: 70%;
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    color: white;
+  }
+
+  .aboutSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .getToKnow {
+    text-align: left;
+    padding: 30px;
+    margin-right: 30px;
+    width: 700px;
+    font-size: 2rem;
+    font-weight: 600;
+    color: $Purple;
+  }
+  p {
+    text-align: left;
+    font-size: 2rem;
+    font-weight: 600;
+    color: $Purple;
+  }
+  .getToKnowMePara {
+    line-height: 1.8rem;
+    font-size: 1rem;
+    font-weight: 400;
+    color: white;
+    margin-top: 15px;
+  }
+  .contactMe {
+    margin-top: 25px;
+    height: 60px;
+    width: 180px;
+    border: none;
+    border-radius: 8px;
+    background-color: $Purple;
+    font-size: 1.3rem;
+    font-weight: 550;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.6s ease;
+  }
+  .contactMe:hover {
+    transform: translateY(-6px);
+  }
+  .skills {
+    padding: 30px;
+    width: 700px;
+    height: 400px;
+    margin-right: 20px;
+    margin-bottom: 45px;
+
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 10px;
+  }
+}

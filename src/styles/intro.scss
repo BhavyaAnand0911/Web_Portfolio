@@ -1,0 +1,102 @@
+$Purple: #da38da;
+
+section {
+  color: white;
+  margin-top: 200px;
+  height: calc(75vh - 50px);
+
+  .introContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    line-height: 5.5rem;
+  }
+  .links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: rgb(124, 119, 119);
+    align-items: center;
+    position: absolute;
+    left: 0;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    height: 300px;
+    width: 65px;
+    transition: transform 1s ease;
+
+    .link:hover {
+      cursor: pointer;
+      transform: translateY(-5px);
+    }
+
+    img {
+      height: 40px;
+      width: 40px;
+    }
+  }
+
+  .hello {
+    align-items: center;
+    font-size: 4rem;
+    font-weight: 700;
+    text-align: center;
+  }
+  .introText {
+    margin: 40px;
+  }
+  .introName {
+    margin: 20px;
+    color: $Purple;
+  }
+  .post {
+    font-size: 3rem;
+    font-weight: 600;
+  }
+  .introPara {
+    margin-top: 20px;
+    font-size: 1.8rem;
+    width: 50%;
+    line-height: 2rem;
+  }
+  .introBtn {
+    margin-top: 50px;
+    width: 250px;
+    height: 60px;
+    border: none;
+    border-radius: 8px;
+    background-color: $Purple;
+
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.6s ease;
+  }
+  .introBtn:hover {
+    transform: translateY(-6px);
+  }
+}
+
+.scroll {
+  display: flex;
+  justify-content: center;
+
+  .scrollBtn {
+    position: absolute;
+    color: white;
+    font-size: 3rem;
+    bottom: 3rem;
+    transform: translateX(-50%);
+    animation: mouseScrollAnimation 0.5s linear infinite alternate;
+  }
+
+  @keyframes mouseScrollAnimation {
+    to {
+      transform: translate(-50%, -10px);
+    }
+  }
+}

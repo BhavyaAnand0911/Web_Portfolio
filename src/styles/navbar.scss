@@ -1,0 +1,69 @@
+$Purple: #da38da;
+@import url("https://fonts.googleapis.com/css2?family=AR+One+Sans:wght@400;500;600;700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,500&family=Roboto:wght@300;400;500&family=Source+Code+Pro&family=Ubuntu:wght@300&display=swap");
+
+body {
+  background-repeat: no-repeat;
+  background-image: url("../assets/background.jpeg");
+  background-size: cover;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 80px;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+
+  .navLogo {
+    display: flex;
+  }
+
+  .navlogo {
+    margin-left: 30px;
+    margin-top: 15px;
+    height: 55px;
+    width: 55px;
+    border-radius: 100%;
+    cursor: pointer;
+  }
+  .navName {
+    color: white;
+    font-size: 1.2rem;
+    margin-left: 20px;
+    margin-top: 29px;
+    font-weight: 650;
+    cursor: pointer;
+  }
+  .navName:hover {
+    color: $Purple;
+  }
+  .navMenu {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 27px;
+    margin-right: 60px;
+  }
+  .navMenuList {
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin-left: 80px;
+    margin-top: 6px;
+    color: white;
+
+    #home {
+      &:hover {
+        color: white !important;
+        padding-bottom: 0.1rem;
+        border-bottom: 3px solid white;
+      }
+    }
+
+    &:hover {
+      color: $Purple;
+      padding-bottom: 0.1rem;
+      border-bottom: 3px solid $Purple;
+    }
+  }
+}
