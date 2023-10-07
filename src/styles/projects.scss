@@ -2,7 +2,7 @@ $Charcol: #36454f;
 $Purple: #da38da;
 
 .projects {
-  height: calc(115vh - 50px);
+  min-height: calc(260vh - 50px);
   background-image: url("../assets/background.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -12,6 +12,7 @@ $Purple: #da38da;
   flex-direction: column;
   align-items: center;
   line-height: 5rem;
+  margin-bottom: 0px;
 
   .projectsHeading {
     color: white;

@@ -1,0 +1,85 @@
+$Charcol: #36454f;
+$Purple: #da38da;
+
+.contact {
+  height: calc(115vh - 50px);
+  background-color: $Charcol;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 5rem;
+
+  .contactHeading {
+    color: white;
+    font-size: 3rem;
+    font-weight: 600;
+    margin-top: 100px;
+    margin-bottom: 10px;
+  }
+  .line {
+    width: 80px;
+    border-top: 5px solid $Purple;
+    margin-bottom: 30px;
+  }
+  .contactPara {
+    width: 70%;
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    color: white;
+  }
+  .contactFormDiv {
+    margin-top: 60px;
+    background-color: white;
+    height: 680px;
+    width: 800px;
+    border: none;
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2),
+      0 8px 25px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 8px;
+  }
+  .contactForm {
+    display: flex;
+    flex-direction: column;
+
+    margin: 15px;
+    padding: 15px;
+  }
+
+  .formElement {
+    margin: 30px;
+    height: 50px;
+    padding: 10px;
+    font-size: 1.2rem;
+    font-weight: 530;
+    border: 1px solid rgb(186, 179, 179);
+    border-radius: 6px;
+    box-shadow: 0 4px 8px 0 rgba(113, 112, 112, 0.2),
+      0 6px 20px 0 rgba(159, 157, 157, 0.19);
+    background-color: #f0f0f0;
+  }
+
+  textarea {
+    resize: none;
+    min-width: 680px;
+    min-height: 260px;
+  }
+  .formSubmit {
+    width: 200px;
+    height: 50px;
+    background-color: $Purple;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-left: 510px;
+    margin-top: 20px;
+    transition: transform 0.4s ease;
+  }
+  .formSubmit:hover {
+    cursor: pointer;
+    transform: translateY(-6px);
+  }
+}

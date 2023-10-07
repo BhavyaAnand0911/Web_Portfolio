@@ -1,0 +1,55 @@
+$Charcol: #36454f;
+$Purple: #da38da;
+
+.footer {
+  color: white;
+  background-color: black;
+  height: 300px;
+
+  .footerContent {
+    width: 75%;
+    height: 300px;
+
+    display: flex;
+    justify-content: space-between;
+  }
+  .left {
+    width: 80%;
+    padding: 30px;
+    margin: 30px;
+    margin-left: 300px;
+
+    .footerName {
+      font-size: 1.6rem;
+      font-weight: 600;
+    }
+    .footertext {
+      margin-top: 30px;
+      font-size: 1rem;
+      line-height: 1.5rem;
+    }
+  }
+  .right {
+    width: 50%;
+    padding: 30px;
+    margin: 30px;
+    margin-left: 180px;
+    text-align: left;
+
+    .socials {
+      font-size: 1.6rem;
+      font-weight: 600;
+      margin-left: 10px;
+    }
+    .links {
+      margin-top: 20px;
+    }
+  }
+  .copyright {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding-bottom: 50px;
+    font-weight: 200;
+  }
+}

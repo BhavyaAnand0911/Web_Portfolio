@@ -1,6 +1,7 @@
 import React from "react";
 import SKILL from "./skill.jsx";
 import "../styles/about.scss";
+import { Link } from "react-scroll";
 
 const About = () => {
   return (
@@ -32,7 +33,15 @@ const About = () => {
               and I look forward to connecting with you and exploring new
               horizons in the world of web development! 🚀
             </p>
-            <button className="contactMe">CONTACT ME</button>
+            <Link
+              to="contact"
+              spy={true}
+              smooth={true}
+              offset={65}
+              duration={400}
+            >
+              <button className="contactMe">CONTACT</button>
+            </Link>
           </div>
           <div className="getToKnow">
             My Skills

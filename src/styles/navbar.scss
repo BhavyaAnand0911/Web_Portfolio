@@ -1,11 +1,6 @@
 $Purple: #da38da;
 @import url("https://fonts.googleapis.com/css2?family=AR+One+Sans:wght@400;500;600;700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,500&family=Roboto:wght@300;400;500&family=Source+Code+Pro&family=Ubuntu:wght@300&display=swap");
 
-body {
-  background-repeat: no-repeat;
-  background-image: url("../assets/background.jpeg");
-  background-size: cover;
-}
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -65,5 +60,63 @@ body {
       padding-bottom: 0.1rem;
       border-bottom: 3px solid $Purple;
     }
+  }
+}
+/* Add this CSS to style the mobile menu */
+.mobile-menu-button {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  padding: 10px;
+  background: transparent;
+  border: none;
+}
+
+.mobile-menu-button .bar {
+  width: 30px;
+  height: 3px;
+  background-color: white;
+  margin: 3px 0;
+}
+
+.mobile-menu {
+  display: none;
+  position: absolute;
+  top: 80px; /* Adjust this value based on your header height */
+  right: 0;
+  background: black;
+  width: 200px;
+}
+
+.mobile-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.mobile-menu li {
+  margin: 10px 0;
+}
+
+.mobile-menu a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  padding: 10px;
+  display: block;
+}
+
+/* Media query for showing/hiding mobile menu */
+@media (max-width: 768px) {
+  .mobile-menu-button {
+    display: flex;
+  }
+
+  .navMenu {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: block;
   }
 }

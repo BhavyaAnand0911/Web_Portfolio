@@ -2,6 +2,7 @@ import React from "react";
 const cardStyle = {
   color: "black",
   minWidth: "90px",
+  maxWidth: "120px",
   height: "45px",
   padding: "3px",
   borderRadius: "6px",
