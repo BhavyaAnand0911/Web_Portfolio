@@ -1,18 +1,13 @@
 $Purple: #da38da;
 
-body {
-  height: calc(115vh - 50px);
+.intro {
+  color: white;
+  height: calc(100vh - 50px);
+  width: 100vw;
+
   background-image: url("../assets/background.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
-  height: calc(110vh - 50px);
-  width: 100%;
-}
-
-section {
-  color: white;
-  margin-top: 200px;
-  height: calc(75vh - 50px);
 
   .introContent {
     display: flex;
@@ -21,14 +16,18 @@ section {
     flex-direction: column;
     text-align: center;
     line-height: 5.5rem;
+    position: relative;
+    top: 200px;
   }
+
   .links {
     display: flex;
+    z-index: 20;
     flex-direction: column;
     justify-content: space-evenly;
     background-color: rgb(124, 119, 119);
     align-items: center;
-    margin-top: 30px;
+    margin-top: 250px;
     position: absolute;
     left: 0;
     border-top-right-radius: 8px;
@@ -106,5 +105,47 @@ section {
     to {
       transform: translate(-50%, -10px);
     }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hello {
+    align-items: center;
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+  }
+  .introText {
+    margin: 30px;
+  }
+  .introName {
+    margin: 15px;
+    color: $Purple;
+  }
+  .post {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  .introPara {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    width: 50%;
+    line-height: 1.3rem;
+  }
+  .introBtn {
+    margin-top: 50px;
+    width: 250px;
+    height: 60px;
+    border: none;
+    border-radius: 8px;
+    background-color: $Purple;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.6s ease;
+  }
+  .introBtn:hover {
+    transform: translateY(-6px);
   }
 }

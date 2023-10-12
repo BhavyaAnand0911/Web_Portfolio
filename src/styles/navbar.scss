@@ -1,10 +1,17 @@
 $Purple: #da38da;
+
 @import url("https://fonts.googleapis.com/css2?family=AR+One+Sans:wght@400;500;600;700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,500&family=Roboto:wght@300;400;500&family=Source+Code+Pro&family=Ubuntu:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
 
 .navbar {
   display: flex;
   justify-content: space-between;
   width: 100%;
+  box-sizing: border-box;
   height: 80px;
   position: sticky;
   top: 0;
@@ -22,6 +29,7 @@ $Purple: #da38da;
     border-radius: 100%;
     cursor: pointer;
   }
+
   .navName {
     color: white;
     font-size: 1.2rem;
@@ -30,15 +38,19 @@ $Purple: #da38da;
     font-weight: 650;
     cursor: pointer;
   }
+
   .navName:hover {
     color: $Purple;
   }
+
   .navMenu {
     display: flex;
-    justify-content: space-between;
+    flex-grow: 1;
+    justify-content: flex-end;
     margin-top: 27px;
     margin-right: 60px;
   }
+
   .navMenuList {
     font-size: 1rem;
     font-weight: 600;
@@ -62,7 +74,7 @@ $Purple: #da38da;
     }
   }
 }
-/* Add this CSS to style the mobile menu */
+
 .mobile-menu-button {
   display: none;
   flex-direction: column;
@@ -76,13 +88,12 @@ $Purple: #da38da;
   width: 30px;
   height: 3px;
   background-color: white;
-  margin: 3px 0;
+  margin: 3px;
 }
 
 .mobile-menu {
   display: none;
   position: absolute;
-  top: 80px; /* Adjust this value based on your header height */
   right: 0;
   background: black;
   width: 200px;
@@ -106,7 +117,6 @@ $Purple: #da38da;
   display: block;
 }
 
-/* Media query for showing/hiding mobile menu */
 @media (max-width: 768px) {
   .mobile-menu-button {
     display: flex;
@@ -114,6 +124,16 @@ $Purple: #da38da;
 
   .navMenu {
     display: none;
+  }
+
+  .navlogo {
+    margin-left: 15px;
+    margin-top: 8px;
+    height: 15px;
+    width: 15px;
+  }
+  .navName {
+    font-size: 0.2rem;
   }
 
   .mobile-menu {
